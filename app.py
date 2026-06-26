@@ -6,7 +6,7 @@ import os
 # 1. APIキーの設定
 # ==========================================
 GOOGLE_API_KEY = "AIzaSyC1bLg0NY_igMhMBQhUuRvMrmEGLdodQjU"  
-genai.configure(api_key=GOOGLE_API_KEY)
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 # ==========================================
 # 2. データの読み込みとシステムプロンプトの構築
